@@ -4,7 +4,7 @@ Example website for inspiration:
 
 https://www.delish.com/cooking/
 
-# BlackJack
+# The Gluten Free Baker
 
 Milestone Project # 3 - The Gluten Free Baker Online Cookbook
 
