@@ -17,35 +17,21 @@
 
 <body>
 	<header>
-		<nav class="nav-extended grey darken-1">
-			<div class="nav-wrapper">
-				<a href="{{ url_for('index')}}" class="brand-logo">The Gluten Free Baker</a>
-				<a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
-				<ul class="right hide-on-med-and-down">
-					<li><a href="{{ url_for('index')}}">Home</a></li>
-					<li><a href="#">Recipes</a></li>
-					<li><a href="#">Add a New Recipe</a></li>
-					<li><a href="#">Log Out</a></li>
-					<li><a href="#">Log In</a></li>
-					<li><a href="#">Sign Up</a></li>
-				</ul>
+		<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="{{ url_for('index') }}">The Gluten Free Baker</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link active" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="#">LogIn</a>
+					<a class="nav-link" href="#">SignUp</a>
+				</div>
 			</div>
 		</nav>
-
-		<ul class="sidenav" id="mobile-demo">
-        <li>
-            <h4 class="center-align grey darken-1">The Gluten Free Baker</h4>
-        </li>
-			<li><a href="{{ url_for('index')}}">Home</a></li>
-			<li><a href="#">Recipes</a></li>
-			<li><a href="#">Add a New Recipe</a></li>
-			<li><a href="#">Log Out</a></li>
-			<li><a href="#">Log In</a></li>
-			<li><a href="#">Sign Up</a></li>
-		</ul>
 	</header>
 
-	<main class="container">
+	<main>
 		{% block content %}
 
 		{% endblock %}
