@@ -17,13 +17,14 @@
 
 <body>
 	<header>
+    <!-- Top Navbar -->
 		<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
 			<div class="container">
-				<a class="navbar-brand" href="{{ url_for('index') }}">The Gluten Free Baker</a>
+				<a class="navbar-brand" href="{{ url_for('get_home') }}">The Gluten Free Baker</a>
 			</div>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav">
-					<a class="nav-link active" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-link active" href="{{ url_for('get_home') }}">Home <span class="sr-only">(current)</span></a>
 					<a class="nav-link" href="#">LogIn</a>
 					<a class="nav-link" href="#">SignUp</a>
 				</div>
